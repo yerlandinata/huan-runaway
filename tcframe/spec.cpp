@@ -30,17 +30,17 @@ protected:
 
     void Subtask1(){
         Points(10);
-        CONS(3 <= N && N <= 10);
+        CONS(eachElementBetween(N, 3, 10));
     }
 
     void Subtask2(){
         Points(60);
-        CONS(10 < N && N <= 10^5);
+        CONS(eachElementBetween(N, 11, 100000));
     }
 
     void Subtask3(){
         Points(30);
-        CONS(10^5 < N && N <= 10^7);
+        CONS(eachElementBetween(N, 100001, 10000000));
     }
 };
 
