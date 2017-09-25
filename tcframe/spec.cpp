@@ -102,7 +102,7 @@ protected:
     void TestGroup3(){
         Subtasks({3});
         CASE(T = 10, randomElements(100001, 1000000));
-        CASE(T = 10, randomElements(1000001, 1000000));
+        CASE(T = 10, randomElements(1000001, 10000000));
         CASE(T = 10, randomElements(100001, 10000000));
     }
 
