@@ -71,18 +71,41 @@ protected:
         N.clear();
     }
 
-    void TestCases() {
+    // void TestCases() {
+    //     CASE(T = 8, N = {3, 4, 5, 6, 7, 8, 9, 10});
+    //     CASE(T = 10, randomElements(11, 100));
+    //     CASE(T = 10, randomElements(101, 1000));
+    //     CASE(T = 10, randomElements(1001, 10000));
+    //     CASE(T = 10, randomElements(10001, 100000));
+    //     CASE(T = 10, randomElements(11, 100000));
+    //     CASE(T = 10, randomElements(11, 100000));
+    //     CASE(T = 10, randomElements(100001, 1000000));
+    //     CASE(T = 10, randomElements(1000001, 1000000));
+    //     CASE(T = 10, randomElements(100001, 10000000));
+    // }
+
+    void TestGroup1(){
+        assignToSubstasks({1});
         CASE(T = 8, N = {3, 4, 5, 6, 7, 8, 9, 10});
+    }
+
+    void TestGroup2(){
+        assignToSubstasks({2});
         CASE(T = 10, randomElements(11, 100));
         CASE(T = 10, randomElements(101, 1000));
         CASE(T = 10, randomElements(1001, 10000));
         CASE(T = 10, randomElements(10001, 100000));
         CASE(T = 10, randomElements(11, 100000));
         CASE(T = 10, randomElements(11, 100000));
+    }
+
+    void TestGroup3(){
+        assignToSubstasks({3});
         CASE(T = 10, randomElements(100001, 1000000));
         CASE(T = 10, randomElements(1000001, 1000000));
         CASE(T = 10, randomElements(100001, 10000000));
     }
+
 private:
     void randomElements(int start, int end){
         for(int i = 0; i < 10; i++){
