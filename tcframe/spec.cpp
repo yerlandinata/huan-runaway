@@ -56,6 +56,7 @@ private:
 class TestSpec : public BaseTestSpec<ProblemSpec> {
 protected:
     void SampleTestCase1() {
+        Subtasks({1});
         Input({
             "2",
             "3",
