@@ -43,7 +43,7 @@ protected:
         CONS(eachElementBetween(N, 100001, 10000000));
     }
 private:
-    bool eachElementBetween(const vector<long long>& v, long long lo, long long hi) {
+    bool eachElementBetween(const vector<int>& v, long long lo, long long hi) {
         for (long long x : v) {
             if (x < lo || x > hi) {
                 return false;
