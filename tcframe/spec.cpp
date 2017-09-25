@@ -12,11 +12,11 @@ protected:
 
     void InputFormat() {
         LINE(T);
-        LINE(N) % SIZE(T);
+        LINES(N) % SIZE(T);
     }
 
     void OutputFormat() {
-        LINE(answer);
+        LINES(answer) % SIZE(T);
     }
 
     void GradingConfig() {
