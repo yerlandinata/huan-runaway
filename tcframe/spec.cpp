@@ -16,7 +16,7 @@ protected:
     }
 
     void OutputFormat() {
-        LINE(answer) % SIZE(T);
+        LINE(answer);
     }
 
     void GradingConfig() {
